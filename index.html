@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Coding Challenge Game</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Coding Challenge Game</h1>
+  </header>
+
+  <main>
+    <section id="challenge-list">
+      <h2>Challenges</h2>
+      <ul id="challenge-items"></ul>
+    </section>
+
+    <section id="editor-section">
+      <h2 id="challenge-title">Select a challenge</h2>
+      <p id="challenge-desc"></p>
+      <textarea id="code-editor">// Write your function here</textarea>
+      <button onclick="runCode()">Run Code</button>
+      <pre id="output"></pre>
+    </section>
+
+    <section id="sidebar">
+      <div id="login-section">
+        <input type="text" id="username" placeholder="Enter your name">
+        <button onclick="login()">Login</button>
+      </div>
+      <div id="leaderboard"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Coding Challenge Game</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
